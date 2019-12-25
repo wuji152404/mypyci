@@ -8,9 +8,10 @@ import unittest , os
 import time
 
 print(os.path.abspath(os.path.dirname(__file__)))
-case_path=os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+fa_path=os.path.dirname(os.path.dirname(__file__))
+case_path=os.path.abspath(os.path.join(fa_path,'case'))
 # 持续集成时不能用相对路径
-report_path=os.path.abspath(os.path.dirname(os.path.dirname(__file__)) + '/report')
+report_path=os.path.abspath(os.path.join(fa_path,'report'))
 print(case_path)
 print(report_path)
 # discover=unittest.defaultTestLoader.discover(case_path, pattern='*_case.py')
