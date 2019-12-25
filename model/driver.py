@@ -20,7 +20,7 @@ def getchrome():
     # driver=webdriver.Chrome(options=options)
 
 
-    driver=webdriver.chrome('C:\Users\65606\AppData\Local\Google\Chrome\Application\chromedriver.exe')
+    driver=webdriver.Chrome('C:\\Users\\65606\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe')
     return driver
 
 
