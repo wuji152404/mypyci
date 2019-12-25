@@ -7,7 +7,7 @@ from BeautifulReport import BeautifulReport
 import unittest , os
 import time
 
-print(os.path.dirname(__file__))
+print(os.path.abspath(os.path.dirname(__file__)))
 case_path=os.path.abspath(os.path.dirname(os.path.dirname(__file__)) + '/case')
 # 持续集成时不能用相对路径
 report_path=os.path.abspath(os.path.dirname(os.path.dirname(__file__)) + '/report')
