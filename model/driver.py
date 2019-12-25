@@ -20,9 +20,11 @@ def getchrome():
     #options.binary_location('C:\Users\65606\AppData\Local\Google\Chrome\Application\chrome.exe')
     # options.add_argument('disabled-inforbars')
     # driver=webdriver.Chrome(options=options)
-
-
-    driver=webdriver.Chrome(os.path.join(DRIVER_PATH,'chromedriver.exe'))
+    option=webdriver.ChromeOptions()
+    option.binary_location=r'C:\Users\65606\AppData\Local\Google\Chrome\Application\chrome.exe'
+    driver=webdriver.Chrome(options=option)
+    #
+    # driver=webdriver.Chrome(os.path.join(DRIVER_PATH,'chromedriver.exe'))
     return driver
 
 
