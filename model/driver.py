@@ -14,10 +14,13 @@ report_path=os.path.abspath(os.path.join(fa_path,'report'))
 
 
 def getchrome():
-    options=webdriver.ChromeOptions()
-    options.binary_location(r'C:\Users\65606\AppData\Local\Google\Chrome\Application\chrome.exe')
-    options.add_argument('disabled-inforbars')
-    driver=webdriver.Chrome(options=options)
+    # options=webdriver.ChromeOptions()
+    #options.binary_location('C:\Users\65606\AppData\Local\Google\Chrome\Application\chrome.exe')
+    # options.add_argument('disabled-inforbars')
+    # driver=webdriver.Chrome(options=options)
+
+
+    driver=webdriver.chrome('C:\Users\65606\AppData\Local\Google\Chrome\Application\chromedriver.exe')
     return driver
 
 
