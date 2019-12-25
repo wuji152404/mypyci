@@ -6,7 +6,6 @@ import sys
 from BeautifulReport import BeautifulReport
 import unittest , os
 import time
-from model import driver
 
 print(os.path.abspath(os.path.dirname(__file__)))
 fa_path=os.path.dirname(os.path.dirname(__file__))
@@ -15,7 +14,6 @@ case_path=os.path.abspath(os.path.join(fa_path,'case'))
 #report_path=os.path.abspath(os.path.join(fa_path,'report'))
 report_path=r'C:\Users\65606\Desktop'
 print("----------------------")
-print(driver.DRIVER_PATH)
 print("----------------------")
 print(case_path)
 print(report_path)
