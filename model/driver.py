@@ -11,6 +11,8 @@ page_path=os.path.abspath(os.path.join(fa_path, 'page'))
 model_path=os.path.abspath(os.path.join(fa_path, 'model'))
 case_path=os.path.abspath(os.path.join(fa_path,'case'))
 report_path=os.path.abspath(os.path.join(fa_path,'report'))
+DRIVER_PATH = os.path.abspath(os.path.join(fa_path,'driver'))
+
 
 
 def getchrome():
@@ -20,7 +22,7 @@ def getchrome():
     # driver=webdriver.Chrome(options=options)
 
 
-    driver=webdriver.Chrome('C:\\Users\\65606\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe')
+    driver=webdriver.Chrome(os.path.join(DRIVER_PATH,'chromedriver.exe'))
     return driver
 
 
@@ -35,4 +37,5 @@ def get_table(tablename, Sheetname):
 
 
 if __name__ == '__main__':
-    print(get_table('user', 'Sheet1'))
+    # print(get_table('user', 'Sheet1'))
+    print(DRIVER_PATH)
